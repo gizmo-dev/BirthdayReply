@@ -1,0 +1,15 @@
+{
+  "name": "birthdayreply",
+  "version": "1.0.0",
+  "description": "Replies To Your Instagram and Birthday Wishes instantly!",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gizmo",
+  "license": "ISC",
+  "dependencies": {
+    "@androz2091/insta.js": "^1.6.1",
+    "@open-wa/wa-automate": "^3.13.2"
+  }
+}
