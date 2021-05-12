@@ -16,6 +16,7 @@ npm install @androz2091/insta.js
 
 ## Setup
 > INSTAGRAM
+
 Replace
 ```js
 client.login('username', 'pass');
@@ -30,7 +31,8 @@ SCAN THE QR CODE GENERATED IN YOUR TERMINAL ONCE YOU RUN THE CODE WITH YOUR WHAT
 node main.js
 ```
 
-## Atrributions
+## Attributions
 
 > Thanks To [@open-wa](https://github.com/open-wa) for the whatsapp package! [wa-automate-nodejs](https://github.com/open-wa/wa-automate-nodejs)
-> tThanks To [@androz2091](https://github.com/Androz2091) For the instagram package! [insta.js](https://github.com/Androz2091/insta.js)
+
+> Thanks To [@androz2091](https://github.com/Androz2091) For the instagram package! [insta.js](https://github.com/Androz2091/insta.js)
