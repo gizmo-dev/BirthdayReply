@@ -24,6 +24,7 @@ client.login('username', 'pass');
 with your Instagram Username and Password
 
 >WHATSAPP
+
 SCAN THE QR CODE GENERATED IN YOUR TERMINAL ONCE YOU RUN THE CODE WITH YOUR WHATSAPP APPLICATION AS A WHATSAPP WEB LOGIN
 
 >START 
