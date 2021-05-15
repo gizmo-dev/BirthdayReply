@@ -1,5 +1,5 @@
 // Thankyou messages
-const msgs = [
+let msgs = [
     `Thanks♥`,
     `Tysm♥`,
     `Thank You♥`,
