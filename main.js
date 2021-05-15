@@ -1,12 +1,12 @@
 // Thankyou messages
 let msgs = [
-    `Thanks♥`,
+    `msgs[options]♥`,
     `Tysm♥`,
     `Thank You♥`,
     `Thank You💖`,
 ]
-var options = Math.floor(Math.random() * msgs.length);
-var thanks = msgs[options]
+let options = Math.floor(Math.random() * msgs.length);
+
 //whatsapp settings
 const wa = require('@open-wa/wa-automate');
 wa.create({
@@ -23,12 +23,12 @@ wa.create({
 
   function start(client) {
     client.onMessage(async message => {
-      if(message.body.toLowerCase().includes('birthday')) return client.sendText(message.from, thanks);
-      if(message.body.toLowerCase().includes('bday')) return client.sendText(message.from,thanks);
-      if(message.body.toLowerCase().includes('happy birthday')) return client.sendText(message.from,thanks);
-      if(message.body.toLowerCase().includes('born day')) return client.sendText(message.from, thanks);
-      if(message.body.toLowerCase().includes('bornday')) return client.sendText(message.from, thanks);
-      if(message.body.toLowerCase().includes('birthday day')) return client.sendText(message.from, thanks);
+      if(message.body.toLowerCase().includes('birthday')) return client.sendText(message.from, msgs[options]);
+      if(message.body.toLowerCase().includes('bday')) return client.sendText(message.from, msgs[options]);
+      if(message.body.toLowerCase().includes('happy birthday')) return client.sendText(message.from, msgs[options]);
+      if(message.body.toLowerCase().includes('born day')) return client.sendText(message.from, msgs[options]);
+      if(message.body.toLowerCase().includes('bornday')) return client.sendText(message.from, msgs[options]);
+      if(message.body.toLowerCase().includes('birthday day')) return client.sendText(message.from, msgs[options]);
       
     });
 }
@@ -45,15 +45,15 @@ client.on('connected', () => {
 client.on('messageCreate', (message) => {
     if (message.author.id === client.user.id) return
 
-    message.markSeen();
+    
 
-    if(message.content.toLowerCase().includes('happy birthday')) return message.chat.sendMessage(thanks);
-    if(message.content.toLowerCase().includes('birthday')) return message.chat.sendMessage(thanks);
-    if(message.content.toLowerCase().includes('bday')) return message.chat.sendMessage(thanks);
-    if(message.content.toLowerCase().includes('bornday')) return message.chat.sendMessage(thanks);
-    if(message.content.toLowerCase().includes('born day')) return message.chat.sendMessage(thanks);      
-    if(message.content.toLowerCase().includes('birth day')) return message.chat.sendMessage(thanks);   
+    if(message.content.toLowerCase().includes('happy birthday')) return message.chat.sendMessage(msgs[options]);
+    if(message.content.toLowerCase().includes('birthday')) return message.chat.sendMessage(msgs[options]);
+    if(message.content.toLowerCase().includes('bday')) return message.chat.sendMessage(msgs[options]);
+    if(message.content.toLowerCase().includes('bornday')) return message.chat.sendMessage(msgs[options]);
+    if(message.content.toLowerCase().includes('born day')) return message.chat.sendMessage(msgs[options]);      
+    if(message.content.toLowerCase().includes('birth day')) return message.chat.sendMessage(msgs[options]);   
     
 });
 
-client.login('username', 'pass'); // enter the account info for which you wanna use the bot
+client.login('gizmo_gg', '@gizmo#insta1605'); // enter the account info for which you wanna use the bot
