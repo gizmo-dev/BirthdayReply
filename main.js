@@ -56,4 +56,4 @@ client.on('messageCreate', (message) => {
     
 });
 
-client.login('gizmo_gg', '@gizmo#insta1605'); // enter the account info for which you wanna use the bot
+client.login('username', 'pass'); // enter the account info for which you wanna use the bot
